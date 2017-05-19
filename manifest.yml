@@ -1,0 +1,8 @@
+applications:
+- path: target/GO10WebService.war
+  memory: 512M
+  instances: 1
+  domain: au-syd.mybluemix.net
+  name: GO10WebService
+  host: GO10WebService
+  disk_quota: 1024M
