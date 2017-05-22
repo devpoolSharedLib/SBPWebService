@@ -38,7 +38,7 @@ function validateForm() {
 	</nav>
 	
 	<div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
-		<form name="resetForm" action="/GO10WebService/ResetPasswordServlet" onsubmit="return validateForm()" method="post" style="width: 100%; text-align: center;">
+		<form name="resetForm" action="/SBPWebService/ResetPasswordServlet" onsubmit="return validateForm()" method="post" style="width: 100%; text-align: center;">
 			
 			<div class="row">
 				<div class="col-md-4" style="text-align: left;"><h4>New Password : </h4></div>

@@ -13,6 +13,6 @@
         <tcpOptions soReuseAddr="true"/>
      </httpEndpoint>
 
-     <application name="GO10WebService" context-root="/" type="war" location="GO10WebService.war"/>
+     <application name="SBPWebService" context-root="/" type="war" location="SBPWebService.war"/>
 </server>
  	

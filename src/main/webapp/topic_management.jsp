@@ -52,7 +52,7 @@
 	
 	function initialData(){
 		$.ajax({
-            url: '/GO10WebService/GetToppicManagementServlet',
+            url: '/SBPWebService/GetToppicManagementServlet',
             type: 'GET',
             contentType: "application/json",
             error: function() {
@@ -138,7 +138,7 @@
 		$("#acceptEmailTable > tbody").empty();
 		$('#pollUserModal').modal('show');
 		$.ajax({
-			url: '/GO10WebService/GetPollReportServlet',
+			url: '/SBPWebService/GetPollReportServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -187,7 +187,7 @@
 		$("#readListUserTable > tbody").empty();
 		$('#readListUserModal').modal('show');
 		$.ajax({
-			url: '/GO10WebService/GetReadUserServlet',
+			url: '/SBPWebService/GetReadUserServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -215,7 +215,7 @@
 		$("#likeListUserTable > tbody").empty();
 		$('#likeListUserModal').modal('show');
 			$.ajax({
-			url: '/GO10WebService/GetLikeUserServlet',
+			url: '/SBPWebService/GetLikeUserServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -287,7 +287,7 @@
 		var obj = getData();
 		$('#pinTopicModal').modal('hide');
 		$.ajax({
-			url: '/GO10WebService/UpdatePinServlet',
+			url: '/SBPWebService/UpdatePinServlet',
             type: 'POST',
             data: JSON.stringify(obj),
             contentType: "application/json",
@@ -384,7 +384,7 @@
 	
 	function reloadData(){
 		$.ajax({
-            url: '/GO10WebService/GetToppicManagementServlet',
+            url: '/SBPWebService/GetToppicManagementServlet',
             type: 'GET',
             contentType: "application/json",
             data: {bookmark: bookmarkList[currentPage]},

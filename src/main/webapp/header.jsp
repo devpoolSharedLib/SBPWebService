@@ -21,7 +21,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/user_role_management.css" />
 	
-	<script type="text/javascript" src="/GO10WebService/tinymce/js/tinymce/tinymce.js"></script>
+	<script type="text/javascript" src="/SBPWebService/tinymce/js/tinymce/tinymce.js"></script>
 
 	<style type="text/css">
 		/* Start by setting display:none to make this hidden.
@@ -59,7 +59,7 @@
 		function gotoSessionServlet(roomId,roomName) {
 			var path = window.location.pathname;
 			var currentPage = path.split("/").pop();
-			window.location.href = "/GO10WebService/SessionServlet?roomId=" + roomId + "&roomName=" + roomName + "&currentPage=" + currentPage
+			window.location.href = "/SBPWebService/SessionServlet?roomId=" + roomId + "&roomName=" + roomName + "&currentPage=" + currentPage
 		}
 	</script>
 
@@ -69,12 +69,12 @@
 // 			$(document).on({
 // 			    ajaxStart: function() { 
 // 				    $.ajax({   
-// 						url: '/GO10WebService/VerifiedSessionServlet',   
+// 						url: '/SBPWebService/VerifiedSessionServlet',   
 // 						type: 'GET',  
 // 						dataType: 'json',
 // 						success: function(timeout) {
 // 							if (timeout) {
-// 								window.location.href = "/GO10WebService/login.jsp";
+// 								window.location.href = "/SBPWebService/login.jsp";
 // 							}
 // 						},
 // 					}); 
@@ -87,12 +87,12 @@
 		
 		function validateSesstion() {
 			$.ajax({   
-				url: '/GO10WebService/VerifiedSessionServlet',   
+				url: '/SBPWebService/VerifiedSessionServlet',   
 				type: 'GET',  
 				dataType: 'json',
 				success: function(timeout) {
 					if (timeout) {
-						window.location.href = "/GO10WebService/login.jsp";
+						window.location.href = "/SBPWebService/login.jsp";
 					}
 				},
 			}); 
@@ -149,7 +149,7 @@
  		          <ul class="dropdown-menu">
  		            <li><a href="#">Action</a></li>
  		            <li role="separator" class="divider"></li>
- 		            <li><a href="/GO10WebService/LogoutServlet">Logout</a></li>
+ 		            <li><a href="/SBPWebService/LogoutServlet">Logout</a></li>
  		          </ul>
  		        </li>
  		        <%

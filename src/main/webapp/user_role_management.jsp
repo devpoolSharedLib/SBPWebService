@@ -16,7 +16,7 @@
 	
 	function initialData() {
 		$.ajax({
-            url: '/GO10WebService/GetUserRoleManagementServlet',
+            url: '/SBPWebService/GetUserRoleManagementServlet',
             type: 'GET',
             contentType: "application/json",
             error: function() {
@@ -81,7 +81,7 @@
 		        	return callback();
 		        }
 		        $.ajax({
-		            url: '/GO10WebService/GetEmailFullTextSearchServlet',
+		            url: '/SBPWebService/GetEmailFullTextSearchServlet',
 		            type: 'GET',
 		            data: {empEmail: query},
 		            global: false,
@@ -116,7 +116,7 @@
 		if(validateForm()){
 			var obj = getData();
 			$.ajax({
-	            url: '/GO10WebService/SaveUserRoleManagementServlet',
+	            url: '/SBPWebService/SaveUserRoleManagementServlet',
 	            type: 'POST',
 	            data: JSON.stringify(obj),
 	            contentType: "application/json",
