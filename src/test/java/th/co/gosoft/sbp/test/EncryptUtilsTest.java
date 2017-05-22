@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import th.co.gosoft.sbputil.EncryptUtils;
+import th.co.gosoft.sbp.util.EncryptUtils;
 
 public class EncryptUtilsTest {
 

@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import th.co.gosoft.sbp.model.TopicManagementModel;
-import th.co.gosoft.sbputil.PropertiesUtils;
+import th.co.gosoft.sbp.util.PropertiesUtils;
 
 @WebServlet("/UpdatePinServlet")
 public class UpdatePinServlet extends HttpServlet {

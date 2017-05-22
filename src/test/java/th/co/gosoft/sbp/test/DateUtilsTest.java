@@ -9,7 +9,7 @@ import java.util.List;
 import org.junit.Test;
 
 import th.co.gosoft.sbp.model.LastTopicModel;
-import th.co.gosoft.sbputil.DateUtils;
+import th.co.gosoft.sbp.util.DateUtils;
 
 public class DateUtilsTest {
 

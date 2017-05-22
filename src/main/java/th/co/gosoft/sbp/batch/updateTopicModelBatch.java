@@ -5,7 +5,7 @@ import java.util.List;
 import com.cloudant.client.api.Database;
 
 import th.co.gosoft.sbp.model.LastTopicModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
 
 public class updateTopicModelBatch {
 

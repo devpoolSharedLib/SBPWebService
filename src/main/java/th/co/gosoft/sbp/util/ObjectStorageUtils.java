@@ -1,4 +1,4 @@
-package th.co.gosoft.sbputil;
+package th.co.gosoft.sbp.util;
 
 import org.openstack4j.api.OSClient;
 import org.openstack4j.api.OSClient.OSClientV3;

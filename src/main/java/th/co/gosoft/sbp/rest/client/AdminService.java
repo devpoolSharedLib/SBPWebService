@@ -3,7 +3,7 @@ package th.co.gosoft.sbp.rest.client;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import th.co.gosoft.sbputil.PropertiesUtils;
+import th.co.gosoft.sbp.util.PropertiesUtils;
 
 public class AdminService {
     

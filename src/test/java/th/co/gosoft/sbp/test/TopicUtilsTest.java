@@ -8,7 +8,7 @@ import java.util.List;
 import org.junit.Test;
 
 import th.co.gosoft.sbp.model.LastTopicModel;
-import th.co.gosoft.sbputil.TopicUtils;
+import th.co.gosoft.sbp.util.TopicUtils;
 
 public class TopicUtilsTest {
 

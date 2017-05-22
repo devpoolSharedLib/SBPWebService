@@ -21,9 +21,9 @@ import javax.ws.rs.QueryParam;
 import com.cloudant.client.api.Database;
 
 import th.co.gosoft.sbp.model.UserAuthenModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.DateUtils;
-import th.co.gosoft.sbputil.KeyStoreUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.DateUtils;
+import th.co.gosoft.sbp.util.KeyStoreUtils;
 
 @WebServlet("/ResetPasswordServlet")
 public class ResetPasswordServlet extends HttpServlet {

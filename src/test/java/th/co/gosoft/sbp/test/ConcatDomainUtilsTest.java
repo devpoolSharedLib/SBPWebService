@@ -8,7 +8,7 @@ import java.util.List;
 import org.junit.Test;
 
 import th.co.gosoft.sbp.model.TopicModel;
-import th.co.gosoft.sbputil.ConcatDomainUtils;
+import th.co.gosoft.sbp.util.ConcatDomainUtils;
 
 public class ConcatDomainUtilsTest {
 

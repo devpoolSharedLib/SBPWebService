@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import th.co.gosoft.sbputil.PropertiesUtils;
+import th.co.gosoft.sbp.util.PropertiesUtils;
 
 @WebServlet("/GetEmailFullTextSearchServlet")
 public class GetEmailFullTextSearchServlet extends HttpServlet {

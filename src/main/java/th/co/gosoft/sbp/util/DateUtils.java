@@ -1,4 +1,4 @@
-package th.co.gosoft.sbputil;
+package th.co.gosoft.sbp.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;

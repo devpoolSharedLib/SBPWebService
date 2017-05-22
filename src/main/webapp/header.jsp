@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
-<%@page import="th.co.gosoft.go10.util.SecurityUtils"%>
-<%@page import="th.co.gosoft.go10.model.RoomModel"%>
+<%@page import="th.co.gosoft.sbp.util.SecurityUtils"%>
+<%@page import="th.co.gosoft.sbp.model.RoomModel"%>
 <%@page import="java.util.List"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>

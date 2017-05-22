@@ -26,7 +26,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.PutObjectResult;
 import com.amazonaws.util.IOUtils;
 
-import th.co.gosoft.sbputil.PropertiesUtils;
+import th.co.gosoft.sbp.util.PropertiesUtils;
 
 @WebServlet("/UploadServlet")
 public class UploadServlet extends HttpServlet {

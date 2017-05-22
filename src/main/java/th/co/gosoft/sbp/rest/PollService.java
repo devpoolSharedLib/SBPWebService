@@ -22,7 +22,7 @@ import th.co.gosoft.sbp.model.PollModel;
 import th.co.gosoft.sbp.model.PollReportModel;
 import th.co.gosoft.sbp.model.QuestionModel;
 import th.co.gosoft.sbp.model.QuestionReportModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
 
 @Path("server/poll")
 public class PollService {

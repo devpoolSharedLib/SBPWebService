@@ -1,4 +1,4 @@
-package th.co.gosoft.sbputil;
+package th.co.gosoft.sbp.util;
 
 import java.util.Map.Entry;
 import java.util.Set;

@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.openstack4j.api.OSClient;
 import org.openstack4j.api.OSClient.OSClientV3;
 
-import th.co.gosoft.sbputil.ObjectStorageUtils;
+import th.co.gosoft.sbp.util.ObjectStorageUtils;
 
 public class ObjectStorageServiceTest {
 

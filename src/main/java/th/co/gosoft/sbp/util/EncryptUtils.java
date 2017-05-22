@@ -1,4 +1,4 @@
-package th.co.gosoft.sbputil;
+package th.co.gosoft.sbp.util;
 
 import org.apache.commons.codec.binary.Base64;
 

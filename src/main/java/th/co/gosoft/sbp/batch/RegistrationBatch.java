@@ -23,9 +23,9 @@ import com.cloudant.client.api.Database;
 
 import th.co.gosoft.sbp.model.UserAuthenModel;
 import th.co.gosoft.sbp.model.UserModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.EncryptUtils;
-import th.co.gosoft.sbputil.KeyStoreUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.EncryptUtils;
+import th.co.gosoft.sbp.util.KeyStoreUtils;
 
 
 

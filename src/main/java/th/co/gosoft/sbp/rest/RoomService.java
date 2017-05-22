@@ -19,8 +19,8 @@ import com.cloudant.client.api.model.IndexField.SortOrder;
 import th.co.gosoft.sbp.model.RoomModel;
 import th.co.gosoft.sbp.model.UserModel;
 import th.co.gosoft.sbp.model.UserRoleManagementModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.StringUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.StringUtils;
 
 @Path("server/room")
 public class RoomService {

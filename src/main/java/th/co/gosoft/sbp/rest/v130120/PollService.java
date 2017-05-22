@@ -17,8 +17,8 @@ import com.cloudant.client.api.Database;
 
 import th.co.gosoft.sbp.model.ChoiceTransactionModel;
 import th.co.gosoft.sbp.model.PollModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.DateUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.DateUtils;
 
 @Path("v130120/poll")
 public class PollService {

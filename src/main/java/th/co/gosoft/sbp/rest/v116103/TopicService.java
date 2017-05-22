@@ -24,11 +24,11 @@ import th.co.gosoft.sbp.model.LastTopicModel;
 import th.co.gosoft.sbp.model.ReadModel;
 import th.co.gosoft.sbp.model.RoomModel;
 import th.co.gosoft.sbp.model.RoomNotificationModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.ConcatDomainUtils;
-import th.co.gosoft.sbputil.DateUtils;
-import th.co.gosoft.sbputil.PushNotificationUtils;
-import th.co.gosoft.sbputil.TopicUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.ConcatDomainUtils;
+import th.co.gosoft.sbp.util.DateUtils;
+import th.co.gosoft.sbp.util.PushNotificationUtils;
+import th.co.gosoft.sbp.util.TopicUtils;
 
 @Path("v116103/topic")
 public class TopicService {

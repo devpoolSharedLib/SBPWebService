@@ -11,7 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import th.co.gosoft.sbputil.KeyStoreUtils;
+import th.co.gosoft.sbp.util.KeyStoreUtils;
 
 public class KeyStoreUtilsTest {
 

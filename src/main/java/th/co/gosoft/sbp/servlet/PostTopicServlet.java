@@ -29,8 +29,8 @@ import th.co.gosoft.sbp.model.PollModel;
 import th.co.gosoft.sbp.model.QuestionModel;
 import th.co.gosoft.sbp.model.UserAdminModel;
 import th.co.gosoft.sbp.model.UserModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.PropertiesUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.PropertiesUtils;
 
 @WebServlet("/PostTopicServlet")
 public class PostTopicServlet extends HttpServlet {

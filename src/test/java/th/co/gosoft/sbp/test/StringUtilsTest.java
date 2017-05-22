@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import th.co.gosoft.sbputil.StringUtils;
+import th.co.gosoft.sbp.util.StringUtils;
 
 public class StringUtilsTest {
 

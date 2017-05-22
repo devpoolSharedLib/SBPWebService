@@ -14,8 +14,8 @@ import com.cloudant.client.api.Database;
 
 import th.co.gosoft.sbp.model.UserAdminModel;
 import th.co.gosoft.sbp.model.UserAuthenModel;
-import th.co.gosoft.sbputil.CloudantClientUtils;
-import th.co.gosoft.sbputil.KeyStoreUtils;
+import th.co.gosoft.sbp.util.CloudantClientUtils;
+import th.co.gosoft.sbp.util.KeyStoreUtils;
 
 @WebServlet("/AdminLoginServlet")
 public class AdminLoginServlet extends HttpServlet {
