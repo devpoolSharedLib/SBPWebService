@@ -57,7 +57,7 @@
 	    
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    	<ul class="nav navbar-nav">
-		      	<li><h4 class="header-word">GO10 Administration</h4></li>
+		      	<li><h4 class="header-word">SPB Administration</h4></li>
 	      	</ul>
 	    </div>
 	  </div><!-- /.container-fluid -->
