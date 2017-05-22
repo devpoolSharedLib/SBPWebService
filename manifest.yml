@@ -1,8 +1,8 @@
 applications:
-- path: target/GO10WebService.war
+- path: target/SBPWebService.war
   memory: 512M
   instances: 1
   domain: au-syd.mybluemix.net
-  name: GO10WebService
-  host: GO10WebService
+  name: SBPWebService
+  host: SBPWebService
   disk_quota: 1024M
