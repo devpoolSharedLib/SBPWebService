@@ -107,14 +107,14 @@
 			rowString += "<tr>";
 			
 			rowString += "<td style='text-align:center; width:33%;'>";
-			if(obj.countRead != 0){
-				rowString += "<a href='#' onclick='showEmpEmailReadModal(\""+obj._id+"\")'><img src='./images/readCount.png' alt='Smiley face' height='20' width='20' title='จำนวนผู้ตอบคำถาม' styel='vertical-align: bottom;'>  "+obj.countRead+"</a>";
+			if(obj.countRead != 0 && obj.countRead != null){
+				rowString += "<a href='#' onclick='showEmpEmailReadModal(\""+obj._id+"\")'><img src='./images/readCount.png' alt='Smiley face' height='20' width='20' title='จำนวนผู้อ่าน' styel='vertical-align: bottom;'>  "+obj.countRead+"</a>";
 			}
 			rowString += "</td>";
 			
 			rowString += "<td style='text-align:center; width:33%;'>";
-			if(obj.countLike != 0){
-				rowString += "<a href='#' onclick='showEmpEmailLikeModal(\""+obj._id+"\")'><img src='./images/likeCounts.png' alt='Smiley face' height='20' width='20' title='จำนวนผู้ตอบคำถาม' styel='vertical-align: bottom;'>  "+obj.countLike+"</a>";
+			if(obj.countLike != 0 && obj.countLike != null){
+				rowString += "<a href='#' onclick='showEmpEmailLikeModal(\""+obj._id+"\")'><img src='./images/likeCounts.png' alt='Smiley face' height='20' width='20' title='จำนวนผู้กด like' styel='vertical-align: bottom;'>  "+obj.countLike+"</a>";
 			}
 			rowString += "</td>";
 			
