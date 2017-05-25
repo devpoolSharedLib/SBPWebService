@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <%@page language="java"	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="th.co.gosoft.sbp.util.PropertiesUtils"%>
 <jsp:include page="header.jsp"></jsp:include>
 
 <style type="text/css">
@@ -52,7 +53,7 @@
 	
 	function initialData(){
 		$.ajax({
-            url: '/SBPWebService/GetToppicManagementServlet',
+            url: '/<%= PropertiesUtils.getProperties("context_root")%>/GetToppicManagementServlet',
             type: 'GET',
             contentType: "application/json",
             error: function() {
@@ -138,7 +139,7 @@
 		$("#acceptEmailTable > tbody").empty();
 		$('#pollUserModal').modal('show');
 		$.ajax({
-			url: '/SBPWebService/GetPollReportServlet',
+			url: '/<%= PropertiesUtils.getProperties("context_root")%>/GetPollReportServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -187,7 +188,7 @@
 		$("#readListUserTable > tbody").empty();
 		$('#readListUserModal').modal('show');
 		$.ajax({
-			url: '/SBPWebService/GetReadUserServlet',
+			url: '/<%= PropertiesUtils.getProperties("context_root")%>/GetReadUserServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -215,7 +216,7 @@
 		$("#likeListUserTable > tbody").empty();
 		$('#likeListUserModal').modal('show');
 			$.ajax({
-			url: '/SBPWebService/GetLikeUserServlet',
+			url: '/<%= PropertiesUtils.getProperties("context_root")%>/GetLikeUserServlet',
             type: 'GET',
             data: {"topicId": id},
             contentType: "application/json",
@@ -287,7 +288,7 @@
 		var obj = getData();
 		$('#pinTopicModal').modal('hide');
 		$.ajax({
-			url: '/SBPWebService/UpdatePinServlet',
+			url: '/<%= PropertiesUtils.getProperties("context_root")%>/UpdatePinServlet',
             type: 'POST',
             data: JSON.stringify(obj),
             contentType: "application/json",
@@ -384,7 +385,7 @@
 	
 	function reloadData(){
 		$.ajax({
-            url: '/SBPWebService/GetToppicManagementServlet',
+            url: '/<%= PropertiesUtils.getProperties("context_root")%>/GetToppicManagementServlet',
             type: 'GET',
             contentType: "application/json",
             data: {bookmark: bookmarkList[currentPage]},

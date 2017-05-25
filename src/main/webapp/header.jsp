@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <%@page import="th.co.gosoft.sbp.util.SecurityUtils"%>
 <%@page import="th.co.gosoft.sbp.model.RoomModel"%>
+<%@page import="th.co.gosoft.sbp.util.PropertiesUtils"%>
 <%@page import="java.util.List"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-	<title>GO10 Administration</title>
+	<title>SBP Administration</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +22,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/user_role_management.css" />
 	
-	<script type="text/javascript" src="/SBPWebService/tinymce/js/tinymce/tinymce.js"></script>
+	<script type="text/javascript" src="/<%= PropertiesUtils.getProperties("context_root")%>/tinymce/js/tinymce/tinymce.js"></script>
 
 	<style type="text/css">
 		/* Start by setting display:none to make this hidden.
@@ -59,40 +60,20 @@
 		function gotoSessionServlet(roomId,roomName) {
 			var path = window.location.pathname;
 			var currentPage = path.split("/").pop();
-			window.location.href = "/SBPWebService/SessionServlet?roomId=" + roomId + "&roomName=" + roomName + "&currentPage=" + currentPage
+			window.location.href = "/<%= PropertiesUtils.getProperties("context_root")%>/SessionServlet?roomId=" + roomId + "&roomName=" + roomName + "&currentPage=" + currentPage
 		}
 	</script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-// 			validateSesstion();
-// 			$(document).on({
-// 			    ajaxStart: function() { 
-// 				    $.ajax({   
-// 						url: '/SBPWebService/VerifiedSessionServlet',   
-// 						type: 'GET',  
-// 						dataType: 'json',
-// 						success: function(timeout) {
-// 							if (timeout) {
-// 								window.location.href = "/SBPWebService/login.jsp";
-// 							}
-// 						},
-// 					}); 
-// 			    },
-// 			    ajaxStop: function() { 
-			    
-// 			    }    
-// 			}); 
-		});	
 		
 		function validateSesstion() {
 			$.ajax({   
-				url: '/SBPWebService/VerifiedSessionServlet',   
+				url: '/<%= PropertiesUtils.getProperties("context_root")%>/VerifiedSessionServlet',   
 				type: 'GET',  
 				dataType: 'json',
 				success: function(timeout) {
 					if (timeout) {
-						window.location.href = "/SBPWebService/login.jsp";
+						window.location.href = "/<%= PropertiesUtils.getProperties("context_root")%>/login.jsp";
 					}
 				},
 			}); 
@@ -149,7 +130,7 @@
  		          <ul class="dropdown-menu">
  		            <li><a href="#">Action</a></li>
  		            <li role="separator" class="divider"></li>
- 		            <li><a href="/SBPWebService/LogoutServlet">Logout</a></li>
+ 		            <li><a href="/<%= PropertiesUtils.getProperties("context_root")%>/LogoutServlet">Logout</a></li>
  		          </ul>
  		        </li>
  		        <%
