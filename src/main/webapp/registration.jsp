@@ -45,7 +45,7 @@ function validateForm() {
         $("#statusRegis").text("Please insert Birthday.");
         $("#statusRegis").css("color", "red");
         return false;
-    }else if(!isEmailFommat(email)||!isGosoftEmailFommat(email)){
+    }else if(!isEmailFommat(email)){
     	$("#statusRegis").text("Please insert correct email.");
         $("#statusRegis").css("color", "red");
         return false;
